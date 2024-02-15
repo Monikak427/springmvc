@@ -20,6 +20,7 @@ public class BMIController {
     public String input(Locale locale, Model model) {
         System.out.println("Home Page Requested, locale = " + locale);
         return "inputForm";
+
     }
     @RequestMapping(value = "/bmi", method = RequestMethod.POST)
     public String result(@RequestParam("height") double heightInInches,
